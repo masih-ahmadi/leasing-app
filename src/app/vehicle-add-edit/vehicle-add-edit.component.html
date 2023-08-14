@@ -1,0 +1,49 @@
+<div mat-dialog-title>
+    <h1>Vehicle Form</h1>
+</div>
+<form [formGroup]="vehicleForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Brand</mat-label>
+                <mat-select formControlName="brand"  (selectionChange)="brandChange($event)">
+                    <mat-option *ngFor="let val of brand" [value]="val.id">{{val.brand}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Model</mat-label>
+                <mat-select formControlName="model">
+                    <mat-option *ngFor="let val of model" [value]="val.id">{{val.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+         <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Year</mat-label>
+                <input matInput type="number" formControlName="modelYear">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>VIN</mat-label>
+                <input matInput formControlName="vin">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+         
+               <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input type="number" matInput formControlName="price">
+            </mat-form-field>
+        </div>
+
+        
+
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    </div>
+</form>

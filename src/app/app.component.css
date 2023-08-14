@@ -1,0 +1,18 @@
+mat-sidenav-container{
+	height: 100%;
+}
+mat-sidenav {
+  width: 200px;
+  background-color: ;
+}
+mat-sidenav-content{
+	padding: 20px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.icon{
+	vertical-align: middle;
+	margin-right: 3px;
+}
