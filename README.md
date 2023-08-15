@@ -1,6 +1,6 @@
 # LeasingApp
 
-Welcome to the Angular App Name repository! 
+Welcome to the Angular Leasing App repository! 
 
 ## Development server
 
