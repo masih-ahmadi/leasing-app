@@ -1,14 +1,18 @@
 # LeasingApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+Welcome to the Angular App Name repository! 
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Provide step-by-step instructions on how to install and set up your app.
+
+1. Clone this repository: `git clone https://github.com/masih-ahmadi/leasing-app.git`
+2. Navigate to the project folder: `cd leasing-app`
+3. Install dependencies: `npm install`
 
 ## Build
 
